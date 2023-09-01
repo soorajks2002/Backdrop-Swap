@@ -11,9 +11,6 @@ def superimpose_img(image_path, background_path, output_path) :
     x = (background_image.width - input_image.width)//2
     y = (background_image.height - input_image.height)//2
     
-    print(background_image.height, background_image.width)
-    print(input_image.height, input_image.width)
-    
     mask = input_image.convert("L")
     mask = mask.point(lambda p: p > 0 and 255)
     
