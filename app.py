@@ -2,11 +2,10 @@ import streamlit as st
 import rembg
 from PIL import Image
 
-favicon = Image.open("favicon.ico")
-st.set_page_config(page_title="Replace Image", page_icon=favicon, layout='wide')
+st.set_page_config(page_title="Backdrop Swap", page_icon="🔄", layout='wide')
 
-st.title("Replace Background")
-st.empty()
+st.title("Backdrop Swap 📸")
+st.markdown("#####")    
 
 background_image = None
 
@@ -15,10 +14,10 @@ with st.form("io-form") :
 
     with col1 :
         st.markdown("##### Upload Target Image")
-        input_image = st.file_uploader("Upload your target image", type=['png', 'jpg', 'jpeg'], label_visibility='hidden')
+        input_image = st.file_uploader("Upload your target image", type=['png', 'jpg', 'jpeg'], label_visibility='collapsed')
     with col2 :
         st.markdown("##### Upload Background Image")
-        background_image = st.file_uploader("Upload your background", type=["png", 'jpg', 'jpeg'], label_visibility='hidden')
+        background_image = st.file_uploader("Upload your background", type=["png", 'jpg', 'jpeg'], label_visibility='collapsed')
 
     img_col1, img_col2 = st.columns(2)
     if input_image :
