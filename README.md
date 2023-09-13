@@ -6,16 +6,6 @@ Backdrop-Swap: Background Replacement Tool
 ### Description:
 Backdrop-Swap is a versatile and user-friendly tool designed to enable seamless background replacement for images. This project offers an intuitive interface for users to replace the background of any image effortlessly. 
 
-### Key Features:
-
-**1. Image Upload :** Users can upload two images - the target image (the one whose background they want to replace) and the new background image.
-
-**2. Background Removal :** The tool employs advanced image segmentation techniques to automatically extract the main subject or character from the target image and create a transparent background.
-
-**3. Resizing and Alignment :** The segmented image is resized to match the dimensions of the new background image, ensuring a perfect fit.
-
-**4. Superimposition :** The segmented image with the transparent background is then superimposed onto the new background image, seamlessly blending the two to create a cohesive final image.
-
 ### How It Works:
 
 **1. Image Selection :** Users select the target image and the new background image by uploading them through the user-friendly interface.
